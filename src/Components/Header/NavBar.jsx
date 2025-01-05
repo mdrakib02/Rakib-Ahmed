@@ -40,7 +40,7 @@ export default function NavBar() {
           {/* Logo */}
           <div className="flex-shrink-0 flex items-center">
             <Sun className="h-8 w-8 text-amber-400 animate-spin-slow" />
-            <span className="ml-2 text-xl font-bold text-white">Portfolio</span>
+            <span className="ml-2 text-xl font-bold text-white">Rakib Ahmed</span>
           </div>
 
           {/* Desktop Navigation */}

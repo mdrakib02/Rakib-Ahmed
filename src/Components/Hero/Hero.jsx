@@ -1,6 +1,6 @@
 import React from "react";
 import { Linkedin, Twitter, Mail, ExternalLink } from 'lucide-react';
-
+import myImg from "../../Asset/ME.jpg"
 
 export default function Hero() {
   return (
@@ -60,7 +60,7 @@ export default function Hero() {
             <div className="relative">
               <div className="absolute -inset-4 bg-primary/20 rounded-full blur-2xl animate-pulse"></div>
               <img 
-                src="/api/placeholder/500/500"
+                src={myImg}
                 alt="Rakid Ahmed"
                 className="relative w-[300px] h-[300px] md:w-[400px] md:h-[400px] rounded-full object-cover mx-auto 
                   border-4 border-primary/30 shadow-2xl"
