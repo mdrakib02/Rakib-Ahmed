@@ -46,10 +46,11 @@ export default function NavBar() {
           {/* Desktop Navigation */}
           <div className="hidden md:block">
             <div className="flex items-center space-x-4">
-              <NavLink href="#home">Home</NavLink>
+              <NavLink href="#">Home</NavLink>
               <NavLink href="#about">About</NavLink>
               <NavLink href="#skills">Skills</NavLink>
               <NavLink href="#projects">Projects</NavLink>
+              <NavLink href="#contact">Contact</NavLink>
               <button className="px-6 py-2 bg-amber-400 hover:bg-amber-500 text-gray-900 rounded-full font-medium transform hover:scale-105 transition-all duration-300 flex items-center gap-2">
                 <Download className="h-4 w-4" />
                 Download CV
