@@ -5,15 +5,14 @@ import ProjectsSection from "../Components/ProjectsSection";
 import AboutSection from "../Components/AboutSection";
 import ContactSection from "../Components/ContactSection";
 
-
 export default function Home() {
   return (
     <div>
       <Hero></Hero>
       <SkillsSection></SkillsSection>
       <ProjectsSection></ProjectsSection>
-      <ContactSection></ContactSection>
       <AboutSection></AboutSection>
+      <ContactSection></ContactSection>
     </div>
   );
 }
