@@ -4,7 +4,7 @@ import SkillsSection from "../Components/SkillsSection";
 import ProjectsSection from "../Components/ProjectsSection";
 import AboutSection from "../Components/AboutSection";
 import ContactSection from "../Components/ContactSection";
-import Contact from "../Components/Contact";
+
 
 export default function Home() {
   return (

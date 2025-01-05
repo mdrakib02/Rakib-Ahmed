@@ -20,7 +20,7 @@ const ProjectModal = ({ project, isOpen, onClose }) => {
           </div>
 
           <img
-            src={recofind}
+            src={project.image}
             alt={project.title}
             className="w-full h-64 object-cover rounded-lg mb-6"
           />
@@ -152,12 +152,12 @@ const ProjectsSection = () => {
       githubLink: "https://github.com/mdrakib02",
     },
     {
-      title: "Social Media Platform",
+      title: "Tech Accessorize Management",
       shortDescription:
         "A modern social networking application with real-time features",
       longDescription:
         "A feature-rich social media platform that allows users to connect, share content, and interact in real-time. Includes advanced features like live messaging and content recommendation.",
-      image: "recofind",
+      image: "/src/Asset/Gadget Heaven.png",
       technologies: [
         "React",
         "Firebase",
@@ -173,8 +173,8 @@ const ProjectsSection = () => {
         "Friend recommendations",
         "Content moderation tools",
       ],
-      liveLink: "#",
-      githubLink: "#",
+      liveLink: "https://dainty-monstera-7ac5be.netlify.app/",
+      githubLink: "https://github.com/mdrakib02",
     },
     {
       title: "Task Management App",
