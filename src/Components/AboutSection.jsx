@@ -7,6 +7,7 @@ import {
   Award,
   User,
 } from "lucide-react";
+import meImg from "../../src/Asset/ME.jpg"
 
 const AboutSection = () => {
   return (
@@ -22,7 +23,7 @@ const AboutSection = () => {
               <div className="absolute -inset-4 bg-gradient-to-r from-primary/20 to-secondary/20 rounded-xl blur-2xl animate-pulse"></div>
               <div className="relative aspect-square overflow-hidden rounded-xl border-2 border-primary/20">
                 <img
-                  src="/api/placeholder/600/600"
+                  src={meImg}
                   alt="Rakib Ahmed"
                   className="w-full h-full object-cover hover:scale-105 transition-transform duration-500"
                 />

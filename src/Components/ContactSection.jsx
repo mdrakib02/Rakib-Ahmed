@@ -67,7 +67,7 @@ const ContactSection = () => {
                       href="mailto:rakid@example.com"
                       className="hover:text-primary transition-colors"
                     >
-                      rakid@example.com
+                      mdrakibahmed515@gmail.com
                     </a>
                   </div>
                 </div>
@@ -82,7 +82,7 @@ const ContactSection = () => {
                       href="tel:+1234567890"
                       className="hover:text-primary transition-colors"
                     >
-                      +123 456 7890
+                     01816234922
                     </a>
                   </div>
                 </div>
@@ -93,7 +93,7 @@ const ContactSection = () => {
                   </div>
                   <div>
                     <p className="font-medium">Location</p>
-                    <p>New York, United States</p>
+                    <p>Bhola, Barisal, Bangladesh</p>
                   </div>
                 </div>
               </div>

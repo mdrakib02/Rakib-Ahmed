@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import { ExternalLink, Github, X, ChevronRight } from "lucide-react";
+import recofind from "../../src/Asset/Recofind.png";
 
 const ProjectModal = ({ project, isOpen, onClose }) => {
   if (!isOpen) return null;
@@ -19,7 +20,7 @@ const ProjectModal = ({ project, isOpen, onClose }) => {
           </div>
 
           <img
-            src={project.image}
+            src={recofind}
             alt={project.title}
             className="w-full h-64 object-cover rounded-lg mb-6"
           />
@@ -127,19 +128,18 @@ const ProjectsSection = () => {
 
   const projects = [
     {
-      title: "E-Commerce Dashboard",
+      title: "A Sports Equipment Store",
       shortDescription:
         "A comprehensive dashboard for managing online store operations",
       longDescription:
-        "A full-featured e-commerce dashboard that provides real-time analytics, inventory management, and order processing capabilities. Built with a focus on user experience and performance.",
-      image: "/api/placeholder/800/600",
+        "This is a sports accessories e-commerce website, a platform where customers can browse, purchase, and review various sports accessories, from gear to apparel, catering to different sports disciplines. The website will support user authentication and product management.",
+      image: "../../src/Asset/Recofind.png",
       technologies: [
         "React",
         "Node.js",
         "MongoDB",
-        "Redux",
+        "Java Script",
         "Tailwind CSS",
-        "Chart.js",
       ],
       features: [
         "Real-time sales analytics and reporting",
@@ -148,8 +148,8 @@ const ProjectsSection = () => {
         "Customer relationship management",
         "Integrated payment processing",
       ],
-      liveLink: "#",
-      githubLink: "#",
+      liveLink: "https://reco-find.web.app/",
+      githubLink: "https://github.com/mdrakib02",
     },
     {
       title: "Social Media Platform",
@@ -157,7 +157,7 @@ const ProjectsSection = () => {
         "A modern social networking application with real-time features",
       longDescription:
         "A feature-rich social media platform that allows users to connect, share content, and interact in real-time. Includes advanced features like live messaging and content recommendation.",
-      image: "/api/placeholder/800/600",
+      image: "recofind",
       technologies: [
         "React",
         "Firebase",
