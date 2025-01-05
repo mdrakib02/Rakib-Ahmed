@@ -1,6 +1,8 @@
 import React, { useState } from "react";
 import { ExternalLink, Github, X, ChevronRight } from "lucide-react";
 import recofind from "../../src/Asset/Recofind.png";
+import Gadget from "../../src/Asset/Gadget Heaven.png";
+import Cricket from "../../src/Asset/Crictket.png";
 
 const ProjectModal = ({ project, isOpen, onClose }) => {
   if (!isOpen) return null;
@@ -20,7 +22,7 @@ const ProjectModal = ({ project, isOpen, onClose }) => {
           </div>
 
           <img
-            src={project.image}
+            src={project?.image}
             alt={project.title}
             className="w-full h-64 object-cover rounded-lg mb-6"
           />
@@ -85,7 +87,7 @@ const ProjectCard = ({ project, onViewDetails }) => {
     <div className="bg-base-100 rounded-xl overflow-hidden shadow-lg group hover:-translate-y-2 transition-all duration-300">
       <div className="relative overflow-hidden">
         <img
-          src={project.image}
+          src={project?.image}
           alt={project.title}
           className="w-full h-48 object-cover group-hover:scale-110 transition-transform duration-500"
         />
@@ -133,7 +135,7 @@ const ProjectsSection = () => {
         "A comprehensive dashboard for managing online store operations",
       longDescription:
         "This is a sports accessories e-commerce website, a platform where customers can browse, purchase, and review various sports accessories, from gear to apparel, catering to different sports disciplines. The website will support user authentication and product management.",
-      image: "../../src/Asset/Recofind.png",
+      image: recofind,
       technologies: [
         "React",
         "Node.js",
@@ -157,7 +159,7 @@ const ProjectsSection = () => {
         "A modern social networking application with real-time features",
       longDescription:
         "A feature-rich social media platform that allows users to connect, share content, and interact in real-time. Includes advanced features like live messaging and content recommendation.",
-      image: "/src/Asset/Gadget Heaven.png",
+      image: Gadget,
       technologies: [
         "React",
         "Firebase",
@@ -181,7 +183,7 @@ const ProjectsSection = () => {
       shortDescription: "A collaborative player management for teams",
       longDescription:
         "This website serves as an all-in-one solution for cricket player management, offering features that cater to teams, coaches, and players. It simplifies player data organization, tracks performance metrics, and facilitates better decision-making with detailed analytics. ",
-      image: "/src/Asset/Crictket.png",
+      image: Cricket,
       technologies: [
         "React",
         "Java Script",

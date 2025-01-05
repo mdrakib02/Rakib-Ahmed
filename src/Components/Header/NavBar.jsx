@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-import { Menu, X, Download, Sun } from "lucide-react";
+import { Menu, X, Download, Sun, Link } from "lucide-react";
 
 const NavLink = ({ href, children, className = "" }) => {
   return (
@@ -51,10 +51,10 @@ export default function NavBar() {
               <NavLink href="#skills">Skills</NavLink>
               <NavLink href="#projects">Projects</NavLink>
               <NavLink href="#contact">Contact</NavLink>
-              <button className="px-6 py-2 bg-amber-400 hover:bg-amber-500 text-gray-900 rounded-full font-medium transform hover:scale-105 transition-all duration-300 flex items-center gap-2">
+              <a href="https://docs.google.com/document/d/16-IgEVycvKVwI-HRMSUMMQ1D_E4m07pJ2q3AlkueV60/edit?usp=sharing" className="px-6 py-2 bg-amber-400 hover:bg-amber-500 text-gray-900 rounded-full font-medium transform hover:scale-105 transition-all duration-300 flex items-center gap-2">
                 <Download className="h-4 w-4" />
                 Download CV
-              </button>
+              </a>
             </div>
           </div>
 
@@ -93,10 +93,10 @@ export default function NavBar() {
           <NavLink href="#projects" className="block">
             Projects
           </NavLink>
-          <button className="w-full mt-4 px-6 py-2 bg-amber-400 hover:bg-amber-500 text-gray-900 rounded-full font-medium transform hover:scale-105 transition-all duration-300 flex items-center justify-center gap-2">
+          <a href="https://docs.google.com/document/d/16-IgEVycvKVwI-HRMSUMMQ1D_E4m07pJ2q3AlkueV60/edit?usp=sharing"  className="w-full mt-4 px-6 py-2 bg-amber-400 hover:bg-amber-500 text-gray-900 rounded-full font-medium transform hover:scale-105 transition-all duration-300 flex items-center justify-center gap-2">
             <Download className="h-4 w-4" />
             Download CV
-          </button>
+          </a>
         </div>
       </div>
     </nav>

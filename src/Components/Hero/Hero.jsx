@@ -1,6 +1,6 @@
 import React from "react";
-import { Linkedin, Twitter, Mail, ExternalLink } from 'lucide-react';
-import myImg from "../../Asset/ME.jpg"
+import { Linkedin, Twitter, Mail, ExternalLink, Github } from "lucide-react";
+import myImg from "../../Asset/ME.jpg";
 
 export default function Hero() {
   return (
@@ -11,16 +11,33 @@ export default function Hero() {
           <div className="w-full md:w-1/2 space-y-8 text-left">
             {/* Social Icons */}
             <div className="flex space-x-4 animate-fade-in">
-              <a href="#" className="p-3 bg-base-100/50 backdrop-blur-sm rounded-full 
-                hover:bg-primary/20 transition-all duration-300 text-primary">
+              <a
+                href="https://github.com/mdrakib02"
+                className="p-3 bg-base-100/50 backdrop-blur-sm rounded-full 
+                hover:bg-primary/20 transition-all duration-300 text-primary"
+              >
+                <Github className="h-6 w-6" />
+              </a>
+
+              <a
+                href="https://www.linkedin.com/in/md-rakib1"
+                className="p-3 bg-base-100/50 backdrop-blur-sm rounded-full 
+                hover:bg-primary/20 transition-all duration-300 text-primary"
+              >
                 <Linkedin className="h-6 w-6" />
               </a>
-              <a href="#" className="p-3 bg-base-100/50 backdrop-blur-sm rounded-full 
-                hover:bg-primary/20 transition-all duration-300 text-primary">
+              <a
+                href="#"
+                className="p-3 bg-base-100/50 backdrop-blur-sm rounded-full 
+                hover:bg-primary/20 transition-all duration-300 text-primary"
+              >
                 <Twitter className="h-6 w-6" />
               </a>
-              <a href="#" className="p-3 bg-base-100/50 backdrop-blur-sm rounded-full 
-                hover:bg-primary/20 transition-all duration-300 text-primary">
+              <a
+                href="https://mail.google.com/mail/mdrakibahmed514@gmail.com"
+                className="p-3 bg-base-100/50 backdrop-blur-sm rounded-full 
+                hover:bg-primary/20 transition-all duration-300 text-primary"
+              >
                 <Mail className="h-6 w-6" />
               </a>
             </div>
@@ -35,22 +52,28 @@ export default function Hero() {
               </h1>
               <div className="relative h-20 overflow-hidden">
                 <div className="animate-slide-loop absolute">
-                  <p className="text-2xl md:text-3xl font-semibold text-accent py-2">Frontend Developer</p>
-                  <p className="text-2xl md:text-3xl font-semibold text-accent py-2">React Specialist</p>
-                  <p className="text-2xl md:text-3xl font-semibold text-accent py-2">UI/UX Enthusiast</p>
+                  <p className="text-2xl md:text-3xl font-semibold text-accent py-2">
+                    Frontend Developer
+                  </p>
+                  <p className="text-2xl md:text-3xl font-semibold text-accent py-2">
+                    React Specialist
+                  </p>
                 </div>
               </div>
               <p className="text-lg text-secondary/90 max-w-lg animate-fade-in-delay-2">
-                Crafting beautiful and functional web experiences with modern technologies.
-                Let's build something amazing together!
+                Crafting beautiful and functional web experiences with modern
+                technologies. Let's build something amazing together!
               </p>
               <div className="flex space-x-4 pt-4 animate-fade-in-delay-3">
-                <button className="btn btn-primary">
-                  View Projects <ExternalLink className="h-4 w-4 ml-2" />
-                </button>
-                <button className="btn btn-outline btn-secondary">
+                <a
+                  href="https://docs.google.com/document/d/16-IgEVycvKVwI-HRMSUMMQ1D_E4m07pJ2q3AlkueV60/edit?usp=sharing"
+                  className="btn btn-primary"
+                >
+                  Download CV <ExternalLink className="h-4 w-4 ml-2" />
+                </a>
+                <a href="#contact" className="btn btn-outline btn-secondary">
                   Contact Me
-                </button>
+                </a>
               </div>
             </div>
           </div>
@@ -59,14 +82,14 @@ export default function Hero() {
           <div className="w-full md:w-1/2 mt-12 md:mt-0 animate-float">
             <div className="relative">
               <div className="absolute -inset-4 bg-primary/20 rounded-full blur-2xl animate-pulse"></div>
-              <img 
+              <img
                 src={myImg}
                 alt="Rakid Ahmed"
                 className="relative w-[300px] h-[300px] md:w-[400px] md:h-[400px] rounded-full object-cover mx-auto 
                   border-4 border-primary/30 shadow-2xl"
               />
               <div className="absolute -bottom-4 -right-4 bg-accent text-accent-content rounded-full p-4 shadow-lg animate-bounce">
-                <span className="text-lg font-bold">5+</span>
+                <span className="text-lg font-bold">0+</span>
                 <span className="block text-sm">Years Exp.</span>
               </div>
             </div>
@@ -76,10 +99,18 @@ export default function Hero() {
 
       <style jsx>{`
         @keyframes slide-loop {
-          0% { transform: translateY(0); }
-          33% { transform: translateY(-40px); }
-          66% { transform: translateY(-80px); }
-          100% { transform: translateY(0); }
+          0% {
+            transform: translateY(0);
+          }
+          33% {
+            transform: translateY(-40px);
+          }
+          66% {
+            transform: translateY(-80px);
+          }
+          100% {
+            transform: translateY(0);
+          }
         }
         .animate-slide-loop {
           animation: slide-loop 6s infinite;
@@ -118,13 +149,23 @@ export default function Hero() {
           }
         }
         @keyframes fadeIn {
-          from { opacity: 0; }
-          to { opacity: 1; }
+          from {
+            opacity: 0;
+          }
+          to {
+            opacity: 1;
+          }
         }
         @keyframes float {
-          0% { transform: translateY(0); }
-          50% { transform: translateY(-20px); }
-          100% { transform: translateY(0); }
+          0% {
+            transform: translateY(0);
+          }
+          50% {
+            transform: translateY(-20px);
+          }
+          100% {
+            transform: translateY(0);
+          }
         }
       `}</style>
     </div>
